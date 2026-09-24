@@ -1,0 +1,8 @@
+{
+  "name": "Zenith Banking Web",
+  "description": "Responsive Zenith-style mobile and web banking clone with services, products, and lifestyle features.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
