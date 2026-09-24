@@ -1,0 +1,5 @@
+'use client';
+import MobileHeader from './MobileHeader';
+import BottomNav from './BottomNav';
+const products=[['⌂','Open Additional Account'],['₦','Request Loan'],['▤','Cheques'],['▤','Bank Draft Request'],['▤','My Bank Statement'],['▧','Dubai Visa'],['⌂','Manage Transfer Limits']];
+export default function ProductServices({onBack}){return <div className="mobile-frame products-screen"><MobileHeader title="Product & Services" onBack={onBack}/><div className="product-grid">{products.map(([icon,label],i)=><button className="service-card" key={i}><span className="service-icon">{icon}</span><span>{label}</span></button>)}</div><section className="activities"><h2>Recent Activities</h2><div className="search">⌕ <span>Search</span></div><div className="activity-row"><span>▣</span><span>Modify Address</span><time>August 19, 2021</time></div><div className="activity-row"><span>▣</span><span>Statement Request</span><time>August 19, 2021</time></div></section><BottomNav onNavigate={()=>{}} active="more"/></div>}
